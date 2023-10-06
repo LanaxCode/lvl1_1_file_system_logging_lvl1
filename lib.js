@@ -17,11 +17,9 @@ export const logging = () => {
         console.log(error)
     }
 
-
     let mytext = "hallo Laura"
     appendFile("logs/log.txt", + "\n" + mytext, function (err) {
         if (err) throw (err);
         console.log('saved')
     })
-
 }
